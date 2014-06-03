@@ -1,17 +1,18 @@
-package com.example.crisetmatch;
+package com.iim.cri_set_et_match;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 
 
-public class MapActivity extends Activity {
+public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_map);
+		setContentView(R.layout.activity_main);
 
+		
 	}
 
 	@Override
@@ -21,6 +22,5 @@ public class MapActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
 
 }
