@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.iim.macarte.MainActivity" >
    <fragment
-        android:id="@+id/map"
+        android:id="@+id/jeu"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />

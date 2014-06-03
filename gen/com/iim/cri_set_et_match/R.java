@@ -423,7 +423,7 @@ containing a value of this type.
         public static final int tsonga=0x7f02002e;
     }
     public static final class id {
-        public static final int action_settings=0x7f070016;
+        public static final int action_settings=0x7f070017;
         public static final int book_now=0x7f070010;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
@@ -434,7 +434,8 @@ containing a value of this type.
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
         public static final int imageView1=0x7f070015;
-        public static final int map=0x7f070014;
+        public static final int jeu=0x7f070014;
+        public static final int map=0x7f070016;
         public static final int match_parent=0x7f07000c;
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
