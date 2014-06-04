@@ -573,11 +573,15 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f05001e;
+        public static final int fm=0x7f050025;
         public static final int hello_world=0x7f050021;
+        public static final int mp=0x7f050024;
+        public static final int rg=0x7f050023;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
         public static final int wallet_buy_button_place_holder=0x7f05001f;
+        public static final int wm=0x7f050026;
     }
     public static final class style {
         /** 

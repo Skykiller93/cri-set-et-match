@@ -4,5 +4,9 @@
     <string name="app_name">Cri-Set-Et-Match</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="rg">Roland Garros;25 mai - 8 juin 2014;48.847044,2.248289</string>
+    <string name="mp">Melbourne Park;19 janvier - 1 février 2015;-37.821043,144.978666</string>
+    <string name="fm">USA - Flushing Meadows;26 août - 9 septembre 2014;40.750456, -73.845685</string>
+    <string name="wm">Londres Wimbledon;23 Juin - 6 Juillet 2014;51.434626,-0.214428</string>
 
 </resources>

@@ -1,5 +1,7 @@
 package com.iim.cri_set_et_match;
 
+import java.util.Calendar;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -10,12 +12,14 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 
 public class MapActivity extends Activity {
 	
 	private GoogleMap maps;
 	private MapFragment mapFragment;
+	private String string = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,25 +32,39 @@ public class MapActivity extends Activity {
 		// modification settings map
 		
 		UiSettings settings = maps.getUiSettings();
-		settings.setZoomControlsEnabled(false);
-		settings.setCompassEnabled(false);
-		settings.setMyLocationButtonEnabled(false);
-		
-		// pilotage des gestures
 		settings.setZoomControlsEnabled(true);
 		settings.setRotateGesturesEnabled(true);
 		settings.setScrollGesturesEnabled(true);
 		settings.setTiltGesturesEnabled(true);
 		
-		// Ajout d'un marqueur
+		// Marqueur
 		MarkerOptions options = new MarkerOptions();
-		options.position(new LatLng(48.855900,2.236470));
-		options.title("Pôle Universitaire");
-		options.snippet("Léonard De Vinci");
-		Marker lieu = maps.addMarker(options);
+		Calendar mc = Calendar.getInstance();
+		int day = mc.get(Calendar.DAY_OF_YEAR);
+
+		if(day<120){
+			//Australia
+			string = getResources().getString(R.string.mp);
+		}else if(day < 160){
+			// Rolang Garos
+			string = getResources().getString(R.string.rg);
+		}else if(day < 200){
+			//Wimbledon
+			string = getResources().getString(R.string.wm);
+		}else if(day < 263){
+			// USA
+			string = getResources().getString(R.string.fm);
+		}else{
+			// Else
+			string = getResources().getString(R.string.rg);
+		}
 		
-		//icone personnalisable
-		// options.icon(BitmapDescriptorFactory,fromresource(R.drawable.logo.iim));
+		String[] data = string.split(";");
+		String[] geo = data[2].split(",");
+		options.position(new LatLng(Float.parseFloat(geo[0]), Float.parseFloat(geo[1])));
+		options.title(data[0]);
+		options.snippet(data[1]);
+		Marker lieu = maps.addMarker(options);
 		
 		options.draggable(true);
 		
