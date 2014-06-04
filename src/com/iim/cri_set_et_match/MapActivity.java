@@ -79,7 +79,7 @@ public class MapActivity extends Activity implements LocationListener{
 		
 		//My Location
 		locationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
-		if(locationManager.isProviderEnabled(locationManager.GPS_PROVIDER)){
+		if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
 			locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 0, this);
 			locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10000, 0, this);
 		}

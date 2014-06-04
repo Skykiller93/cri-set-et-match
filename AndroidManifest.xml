@@ -25,10 +25,6 @@
             android:name="com.iim.cri_set_et_match.MainActivity"
             android:label="@string/app_name" >
             
-        </activity>
-        <activity
-            android:name="com.iim.cri_set_et_match.MapActivity"
-            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,8 +32,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.iim.cri_set_et_match.MapActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
             android:name="com.iim.cri_set_et_match.JeuActivity"
             android:label="@string/app_name" >
+            
         </activity>
         
         <meta-data
