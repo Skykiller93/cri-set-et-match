@@ -133,5 +133,10 @@ public class MapActivity extends Activity implements LocationListener{
 		// TODO Stub de la méthode généré automatiquement
 		
 	}
+	
+	@Override
+	public void onStop(){
+		
+	}
 
 }
