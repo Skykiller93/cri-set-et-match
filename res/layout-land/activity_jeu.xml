@@ -110,7 +110,8 @@
                 android:text="40 0"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_margin="5dp" />
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_bleu"/>
              <Button
                 android:id="@+id/jeusetmatch"
                 android:layout_width="wrap_content"
@@ -119,7 +120,8 @@
                 android:text="Jeu Set Match"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_vert"/>
              <Button
                 android:id="@+id/faute"
                 android:layout_width="wrap_content"
@@ -128,7 +130,8 @@
                 android:text="Faute"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_jaune"/>
         </LinearLayout>
         
         <LinearLayout
@@ -144,20 +147,20 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:background="#ff3300"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="Beat 1" />
+                android:text="Beat 1"
+                android:background="@drawable/border_radius_rouge"/>
             <Button
                 android:id="@+id/beat2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:background="#ff3300"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="Beat 2" />
+                android:text="Beat 2"
+                android:background="@drawable/border_radius_rouge"/>
         </LinearLayout>
 		
 

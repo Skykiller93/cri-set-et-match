@@ -1,7 +1,5 @@
 package com.iim.cri_set_et_match;
 
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
