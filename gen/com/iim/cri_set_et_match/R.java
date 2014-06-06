@@ -424,7 +424,7 @@ containing a value of this type.
         public static final int tsonga=0x7f02002f;
     }
     public static final class id {
-        public static final int action_settings=0x7f070028;
+        public static final int action_settings=0x7f07002d;
         public static final int azarenka=0x7f070018;
         public static final int backgroundGame=0x7f070014;
         public static final int beat1=0x7f070024;
@@ -437,16 +437,20 @@ containing a value of this type.
         public static final int classic=0x7f070011;
         public static final int faute=0x7f070023;
         public static final int federer=0x7f070017;
+        public static final int gmap=0x7f070026;
         public static final int grayscale=0x7f070012;
         public static final int grid=0x7f070016;
         public static final int hingis=0x7f07001a;
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
-        public static final int imageView1=0x7f070026;
+        public static final int imageView1=0x7f070029;
+        public static final int imageView2=0x7f07002a;
         public static final int jeusetmatch=0x7f070022;
         public static final int ll=0x7f070015;
-        public static final int map=0x7f070027;
+        public static final int logo=0x7f070027;
+        public static final int main=0x7f070028;
+        public static final int map=0x7f07002c;
         public static final int match_parent=0x7f07000c;
         public static final int monochrome=0x7f070013;
         public static final int murray=0x7f070019;
@@ -463,6 +467,7 @@ containing a value of this type.
         public static final int sharapova=0x7f07001d;
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
+        public static final int textView1=0x7f07002b;
         public static final int tsonga=0x7f07001e;
         public static final int wrap_content=0x7f07000d;
     }

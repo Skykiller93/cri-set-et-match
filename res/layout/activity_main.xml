@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.iim.cri-set-et-match.MainActivity" >
+    tools:context="com.iim.cri-set-et-match.MainActivity"
+    android:id="@+id/main">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -12,5 +13,25 @@
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
         android:src="@drawable/bg_rg" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="18dp"
+        android:padding="10dp"
+        android:text="Une idée originale de : Clément Lebau, Aleksandre Hadisson, Christophe Pillot, Valérian Piffard, Sébastien Plisson et Benjamin Tap. Réalisation : Institut de l'Internet et du Multimédia (axe Web E-Business E-marketing)"
+        android:textSize="12sp" />
 
 </RelativeLayout>

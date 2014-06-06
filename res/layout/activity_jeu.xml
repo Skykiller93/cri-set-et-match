@@ -157,10 +157,31 @@
                 android:background="#ff3300"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="Beat 1" />
+                android:text="Beat 2" />
         </LinearLayout>
 		
 
     </RelativeLayout> 
     </LinearLayout>
+    
+    <ImageView
+            android:id="@+id/gmap"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo_g_map" 
+            android:clickable="true"/>
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo"
+            android:clickable="true"/>
 </RelativeLayout>

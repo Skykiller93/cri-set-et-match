@@ -1,7 +1,10 @@
 package com.iim.cri_set_et_match;
 
+import java.util.Calendar;
+
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -9,6 +12,7 @@ import android.os.Bundle;
 import android.util.SparseIntArray;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 
@@ -47,6 +51,35 @@ public class JeuActivity extends Activity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_jeu);
+		
+		Calendar mc = Calendar.getInstance();
+		int day = mc.get(Calendar.DAY_OF_YEAR);
+		RelativeLayout layout =(RelativeLayout)findViewById(R.id.backgroundGame);
+		if(day<120){
+			//Australia
+			layout.setBackground(getResources().getDrawable(R.drawable.bg_aus));
+		}else if(day < 160){
+			// Roland Garros
+			layout.setBackground(getResources().getDrawable(R.drawable.bg_rg));
+		}else if(day < 200){
+			//Winbledon
+			layout.setBackground(getResources().getDrawable(R.drawable.bg_win));
+		}else if(day < 263){
+			// USA
+			layout.setBackground(getResources().getDrawable(R.drawable.bg_us));
+		}else{
+			// Else
+			layout.setBackground(getResources().getDrawable(R.drawable.bg_rg));
+		}
+		
+		ImageView mapButton = (ImageView) findViewById(R.id.gmap);
+	    mapButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(JeuActivity.this, MapActivity.class);
+		        startActivity(intent);
+			}
+		});
 
 		// cris joueurs
         this.findViewById(R.id.federer).setOnClickListener(this);
