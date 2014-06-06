@@ -1,23 +1,34 @@
 package com.iim.cri_set_et_match;
 
 import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener, android.view.View.OnClickListener {
+    
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        getActionBar().hide();
+        setContentView(R.layout.activity_main);
+        RelativeLayout layout =  (RelativeLayout) findViewById(R.id.main);
+        layout.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent call = new Intent(com.iim.cri_set_et_match.MainActivity.this, com.iim.cri_set_et_match.JeuActivity.class);
+        startActivity(call);
+    }
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+	public void onClick(DialogInterface dialog, int which) {
+		// TODO Stub de la méthode généré automatiquement
+		
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
 }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_rg"
-    android:orientation="vertical" >
+    android:orientation="horizontal" >
 	
     <LinearLayout
         android:id="@+id/ll"
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|center_horizontal"
-            android:columnCount="3"
+            android:columnCount="5"
             android:rowCount="3" 
             >
             
@@ -101,7 +101,7 @@
             android:layout_alignRight="@+id/grid"
             android:layout_below="@+id/grid"
             android:orientation="horizontal"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="0dp">
             <Button
                 android:id="@+id/quarante"
                 android:layout_width="wrap_content"
@@ -110,7 +110,8 @@
                 android:text="40 0"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_margin="5dp" />
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_bleu"/>
              <Button
                 android:id="@+id/jeusetmatch"
                 android:layout_width="wrap_content"
@@ -119,7 +120,8 @@
                 android:text="Jeu Set Match"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_vert"/>
              <Button
                 android:id="@+id/faute"
                 android:layout_width="wrap_content"
@@ -128,7 +130,8 @@
                 android:text="Faute"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:background="@drawable/border_radius_jaune"/>
         </LinearLayout>
         
         <LinearLayout
@@ -136,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/boutons"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal" >
             <Button
                 android:id="@+id/beat1"
@@ -144,23 +147,44 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:background="#ff3300"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="Beat 1" />
+                android:text="Beat 1"
+                android:background="@drawable/border_radius_rouge"/>
             <Button
                 android:id="@+id/beat2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:background="#ff3300"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:text="Beat 1" />
+                android:text="Beat 2"
+                android:background="@drawable/border_radius_rouge"/>
         </LinearLayout>
 		
 
     </RelativeLayout> 
     </LinearLayout>
+    
+    <ImageView
+            android:id="@+id/gmap"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo_g_map" 
+            android:clickable="true"/>
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo"
+            android:clickable="true"/>
 </RelativeLayout>
