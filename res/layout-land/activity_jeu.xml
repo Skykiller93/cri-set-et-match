@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backgroundGame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rg"
+    android:orientation="horizontal" >
+	
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+   	<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+		<GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:columnCount="5"
+            android:rowCount="3" 
+            >
+            
+            <ImageButton
+                android:id="@+id/federer"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/federer" />
+            <ImageButton
+                android:id="@+id/azarenka"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/azarenka" />
+            <ImageButton
+                android:id="@+id/murray"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/murray" />
+                  
+            <ImageButton
+                android:id="@+id/hingis"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hingis" />
+            <ImageButton
+                android:id="@+id/nadal"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nadal" />
+            <ImageButton
+                android:id="@+id/schiavone"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/schiavone" />
+            
+            <ImageButton
+                android:id="@+id/sharapova"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sharapova" />
+            <ImageButton
+                android:id="@+id/tsonga"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tsonga" />
+            <ImageButton
+                android:id="@+id/serena"
+                android:layout_width="102dp"
+                android:layout_height="95dp"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/serena" />
+        </GridLayout>
+   	    
+		 <LinearLayout
+            android:id="@+id/boutons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/grid"
+            android:layout_alignRight="@+id/grid"
+            android:layout_below="@+id/grid"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+            <Button
+                android:id="@+id/quarante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:text="40 0"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_margin="5dp" />
+             <Button
+                android:id="@+id/jeusetmatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:text="Jeu Set Match"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_margin="5dp"/>
+             <Button
+                android:id="@+id/faute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:text="Faute"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boutons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/beat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="#ff3300"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Beat 1" />
+            <Button
+                android:id="@+id/beat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="#ff3300"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Beat 2" />
+        </LinearLayout>
+		
+
+    </RelativeLayout> 
+    </LinearLayout>
+    
+    <ImageView
+            android:id="@+id/gmap"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo_g_map" 
+            android:clickable="true"/>
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo"
+            android:clickable="true"/>
+</RelativeLayout>

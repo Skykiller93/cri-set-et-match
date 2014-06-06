@@ -50,6 +50,7 @@ public class JeuActivity extends Activity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getActionBar().hide();
 		setContentView(R.layout.activity_jeu);
 		
 		Calendar mc = Calendar.getInstance();
